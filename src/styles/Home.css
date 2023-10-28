@@ -1,0 +1,15 @@
+.container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  border-right: 1px solid rgb(0,0,0, 0.2);
+  border-left: 1px solid rgb(0,0,0, 0.2);
+  width: 40%;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,12 @@
+.post {
+  border-bottom: 1px solid rgb(0,0,0, 0.2);
+  padding: 20px;
+  cursor: pointer;
+}
+.post:hover {
+  background-color: rgb(0, 0, 0, 0.05);
+}
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+}
