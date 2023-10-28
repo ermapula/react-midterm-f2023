@@ -24,7 +24,7 @@ export default function PostPage() {
           {
             post.comments?.map((comment, id) => (
               <div key={id}>
-                <p>
+                <p className='comment'>
                   {comment}
                 </p>
               </div>

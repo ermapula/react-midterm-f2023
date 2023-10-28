@@ -19,9 +19,6 @@ export default function Post({post}) {
         <p style={{fontSize: 12}}>
           Likes {post.likes}
         </p>
-        <p style={{fontSize: 12}}>
-          Watches {post.watches}
-        </p>
       </div>
     </div>
   )

@@ -12,7 +12,10 @@ export default function PostAdd({setPosts}) {
     return setPosts((posts) => {
       return [...posts, {
         id: posts.length + 1,
-        postText
+        postText,
+        comments: [],
+        likes: 0,
+        reposts: 0
       }]
     })
   }
