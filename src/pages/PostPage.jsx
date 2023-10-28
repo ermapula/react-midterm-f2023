@@ -20,6 +20,17 @@ export default function PostPage() {
     <div className='container'>
       <div className='main'>
         <Post post={post} />
+        <div>
+          {
+            post.comments?.map((comment, id) => (
+              <div key={id}>
+                <p>
+                  {comment}
+                </p>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   )

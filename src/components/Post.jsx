@@ -3,16 +3,25 @@ import '../styles/Post.css'
 export default function Post({post}) {
   return (
     <div className='post'>
-      <h2>
+      {/* <h2>
         {post.id}
-      </h2>
+      </h2> */}
       <p>
         {post.postText}
       </p>
       <div className='post-actions'>
-        <div>
-          Comments {post.comments.length}
-        </div>
+        <p style={{fontSize: 12}}>
+          Comments {post.comments ? post.comments.length : 0}
+        </p>
+        <p style={{fontSize: 12}}>
+          Reposts {post.reposts}
+        </p>
+        <p style={{fontSize: 12}}>
+          Likes {post.likes}
+        </p>
+        <p style={{fontSize: 12}}>
+          Watches {post.watches}
+        </p>
       </div>
     </div>
   )
